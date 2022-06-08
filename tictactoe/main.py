@@ -40,15 +40,15 @@ while potez <= 9:
         continue
 	
 # provjeravanje uvjeta za pobjedu
-        if len(set(polje[x])) == 1:
+    if len(set(polje[x])) == 1:
+        potez = 11
+    if len(set([polje[i][y] for i in range(3)])) == 1:
+        potez = 11
+    if x==y and polje[0][0]==polje[1][1]==polje[2][2]:
+        potez = 11
+    if (x,y) == (0,2) or (x,y) == (1,1) or (x,y) == (2,0):
+        if polje[0][2]==polje[1][1]==polje[2][0]:
             potez = 11
-        if len(set([polje[i][y] for i in range(3)])) == 1:
-            potez = 11
-        if x==y and polje[0][0]==polje[1][1]==polje[2][2]:
-            potez = 11
-        if (x,y) == (0,2) or (x,y) == (1,1) or (x,y) == (2,0):
-            if polje[0][2]==polje[1][1]==polje[2][0]:
-                potez = 11
 
 # ispisivanje konačnog rezultata
 if potez == 11:
