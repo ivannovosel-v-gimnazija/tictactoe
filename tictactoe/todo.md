@@ -1,5 +1,6 @@
 # Križić-kružić
 **main.py** sadrži prvu verziju koda (v0.1) koja nešto radi - prikazat će polje za igru u terminalu, omogućiti unos pomoću tipkovnice, provjerava je li polje već zauzeto, te određuje tko je pobijedio. Kod nije pisan u obliku koji omogućava više ljudi da radi na njemu tako da treba doradu, ali tu je da ponudi kostur programa. Postoji cijeli niz funkcionalnosti koje bi trebalo dodati.
+
 **todo.md** sadrži opis programa, te zadatke, slobodno ga koristite kao centralno mjesto za bilježenje tko što radi ili potencijalno napravite drugi .md file u kojem ćete nekako držati bilješke o tome što su čija zaduženja i što se treba napraviti. Pisano je u Markdown notaciji koja pomoću jednostavnih oznaka u tekstu dodaje oblikovanje. Sažete upute za Markdown imate na https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
 
 # Zadaci
