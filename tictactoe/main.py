@@ -59,11 +59,16 @@ else:
 
 def ProvjeraKordinata(unos_prvog, unos_drugog):
 	zauzeto = set()
-	if unos_prvog.isnumeric():
+	if unos_prvog.isnumeric() == False:
+		unos_prvog = int(input("Napiši broj 1-9, pokušaj ponovno:"))
+	Else:
 		while unos_prvog in zauzeto or not in [1,2,3,4,5,6,7,8,9]:
 			unos_prvog = int(input("Polje je zauzeto, pokušaj ponovno:"))
 		zauzeto.add(unos_prvog)
-	if unos_drugog.isnumeric():
+		
+	if unos_drugog.isnumeric() == False:
+		unos_drugog = int(input("Napiši broj 1-9, pokušaj ponovno:"))
+	Else:
 		while unos_drugog in zauzeto or not in [1,2,3,4,5,6,7,8,9]:
 			unos_drugog = int(input("Polje je zauzeto, pokušaj ponovno:"))
 		zauzeto.add(unos_drugog)
