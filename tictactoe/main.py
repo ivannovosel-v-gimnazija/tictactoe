@@ -55,3 +55,20 @@ if potez == 11:
 	print(igrač+' je pobijedio!')
 else:
 	print('Nitko nije pobijedio')
+	
+
+def ProvjeraKordinata(unos_prvog, unos_drugog):
+	zauzeto = set()
+	if unos_prvog.isnumeric():
+		while unos_prvog in zauzeto or not in [1,2,3,4,5,6,7,8,9]:
+			unos_prvog = int(input("Polje je zauzeto, pokušaj ponovno:"))
+		zauzeto.add(unos_prvog)
+	if unos_drugog.isnumeric():
+		while unos_drugog in zauzeto or not in [1,2,3,4,5,6,7,8,9]:
+			unos_drugog = int(input("Polje je zauzeto, pokušaj ponovno:"))
+		zauzeto.add(unos_drugog)
+	
+
+
+ 
+	
